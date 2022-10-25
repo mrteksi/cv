@@ -1,121 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms Demo</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
 
-  <body>
-    <h1>Form</h1>
-    <form action="durum">
-      <div><button type="button">Lütfen formu gönderme</button></div>
-      <label for="kullaniciadi">Kullanici Adi Giriniz:</label>
-      <div>
-        <input
-          type="text"
-          placeholder="username"
-          id="kullaniciadi"
-          name="kullaniciadi"
-        />
-      </div>
-      <label for="sifre">Şifre Giriniz:</label>
-      <div>
-        <input type="password" placeholder="password" id="sifre" name="sifre" />
-      </div>
-      <label for="renk">Renk seçiniz:</label>
-      <div>
-        <input type="color" id="renk" name="renk" />
-      </div>
-      <label for="sayi">Sayi giriniz:</label>
-      <div>
-        <input type="number" id="sayi" placeholder="number" name="sayi" />
-      </div>
-      <input type="submit" value="Gönder" />
-    </form>
-    <hr />
-    <form action="https://www.reddit.com/search">
-      <h2>Reddit</h2>
-      <input type="text" name="q" />
-      <button>Reddit'te Ara</button>
-    </form>
-    <br />
-    <form action="https://www.google.com/search">
-      <h2>Google</h2>
-      <input type="text" name="q" />
-      <button>Google'da Ara</button>
-    </form>
-    <br />
-    <form action="https://www.youtube.com/results">
-      <h2>Youtube</h2>
-      <input type="text" name="search_query" />
-      <button>Youtube'da Ara</button>
-    </form>
-    <form action="/birds">
-      <h2>Daha Fazla Input</h2>
-      <input type="checkbox" name="tos" id="kabul" checked />
-      <label for="kabul">Kabul Ediyorum</label>
-      <p>
-        <input type="radio" name="dam" id="s" value="s" />
-        <label for="s">S</label>
-        <input type="radio" name="dam" id="m" value="m" />
-        <label for="m">M</label>
-        <input type="radio" name="dam" id="l" value="l" />
-        <label for="l">L</label>
-      </p>
-      <p>
-        <label for="hayvan">Hayvan Seçiniz</label>
-        <select name="hayv" id="hayvan">
-          <option value="">Seçiniz</option>
-          <option value="balik">Balik</option>
-          <option value="kedi">Kedi</option>
-          <option value="kuş">Kuş</option>
-        </select>
-      </p>
-      <p>
-        <input
-          type="range"
-          name="volume miktari"
-          min="1"
-          max="100"
-          id="volume"
-        />
-        <label for="volume">Volume</label>
-      </p>
-      <p>
-        <label for="istek">Özel İstek</label>
-        <textarea
-          name="istek"
-          id="istek"
-          cols="30"
-          rows="10"
-          placeholder="Buraya bir şeyler yaziniz"
-        ></textarea>
-      </p>
-    </form>
-    <h2>Validations</h2>
-    <div><button>Gönder</button></div>
-    <hr />
-    <form action="/yedek">
-      <label for="ilk">İsim Giriniz</label>
-      <input type="text" name="ilk" id="ilk" required />
-      <p>
-        <label for="kullaniciadi">Kullanici Adi</label>
-        <input
-          type="text"
-          name=""
-          id="kullaniciadi"
-          minlength="5"
-          maxlength="25"
-          required
-        />
-      </p>
-      <h2>URL Doğrulama</h2>
-      <p>
-        <input type="url" name="url" id="url" />
-      </p>
-      <button>Submit</button>
-    </form>
-  </body>
+<h1>Form</h1>
+
+<form action="/search/">
+  <div><button type="button">Lütfen Formu Gönderme</button></div>
+  <label for="kullaniciadi">Kullanıcı Adı Giriniz:</label>
+  <div>
+    <input type="text" placeholder="username" id="kullaniciadi" name="kullaniciadi">
+  </div>
+  <label for="sifre">Şifrenizi Giriniz:</label>
+  <div>
+    <input type="password" placeholder="password"  id="sifre" name="sifre">
+  </div>
+  <label for="renk">Renk Seçiniz :</label>
+ <div>
+  <input type="color" id="renk" name="renk"> 
+ </div>
+  <label for="sayi">Sayinizi Seçiniz :</label>
+  <div>
+    <input type="number"  placeholder="number" id="sayi" name="sayi">
+  </div>
+<input type="submit" value="Gönder"/>
+</form>
+<hr/>
+<form action="https://www.reddit.com/search">
+  <h2>Reddit</h2>
+  <input type="text" name="q">
+  <button>Reddit'te Ara</button>
+</form>
+<br>
+<form action="https://www.google.com/search">
+  <h2>Google</h2>
+  <input type="text" name="q" >
+<button>Google'da Ara</button>
+</form>
+<br>
+<form action="https://www.youtube.com/results">
+  <h2>Youtube</h2>
+  <input type="text" name="search_query">
+  <button>Youtube'da Ara</button>
+</form>
+<form action="/birds">
+  <h2>Daha Fazla Input</h2>
+  <input type="checkbox" name="tos" id="kabul" checked>
+  <label for="kabul">Kabul Ediyorum</label>
+  <p>
+    <input type="radio" name="dam" id="s" value="s">
+    <label for="s">S</label>
+    <input type="radio" name="dam" id="m" value="m">
+    <label for="m">M</label>
+    <input type="radio" name="dam" id="l" value="l">
+    <label for="l">L</label>
+  </p>
+  <p>
+    <label for="hayvan">Hayvan Seçiniz</label>
+    <select name="hayv" id="hayvan">
+      <option value="">Seçiniz</option>
+      <option value="balik">Balik</option>
+      <option value="kus">Kuş</option>
+      <option value="kedi">Kedi</option>
+    </select>
+  </p>
+  <p>
+    <input type="range" name="volume miktari" min="1" max="100" id="volume">
+    <label for="volume">Volume</label>
+  </p>
+  <p>
+    <label for="istek">Özel İstek</label>
+    <textarea name="istek" id="istek" cols="30" rows="10" placeholder="Buraya bir şeyler yazınız"></textarea>
+  </p>
+</form>
+<h2>Validations</h2>
+<div><button>Gönder</button></div>
+<hr>
+<form action="/yedek">
+<label for="ilk">İsim Giriniz : </label>
+<input type="text" name="ilk" id="ilk" required>
+<p>
+  <label for="kullaniciadi">Kullanici Adi</label>
+  <input type="text" name="" id="kullaniciadi" minlength="5" maxlength="25" required>
+</p>
+<h2>URL Doğrulama</h2>
+<p>
+  <input type="url" name="url" id="url">
+</p>
+<button>Submit</button>
+</form>
+
+</body>
 </html>

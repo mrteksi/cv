@@ -1,0 +1,19 @@
+body{
+    background-color: burlywood;
+}
+
+h3{
+
+    background-color: rgb(167, 167, 149);
+    color: whitesmoke;
+}
+
+hr{
+    background-color: black;
+    border-style: none;
+    height: 2px;
+    width: 80%;
+}
+h1{
+    color: brown;
+}
